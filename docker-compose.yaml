@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  classifer:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+       - ~/.cache/huggingface:/root/.cache/huggingface
